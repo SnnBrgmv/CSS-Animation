@@ -194,3 +194,14 @@ svg.video text {
         font-size: 1rem;
     }
 }
+
+@media (max-width: 1200px) {
+    div.dvd-video {
+        width: 40%;
+    }
+
+    svg.dvd text,
+    svg.video text {
+        font-size: .8rem;
+    }
+}
