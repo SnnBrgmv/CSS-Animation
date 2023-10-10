@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+div.dvd-video {
+    width: 9%;
+    height: max-content;
+    /* background-color: red; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    animation: dvd-anima 16s ease-out infinite forwards;
+}
+
+.dvd-video svg {
+    width: 100%;
+    height: 38px;
+}
+
+svg.dvd {
+    height: 25px;
+}
+
+svg.dvd text {
+    letter-spacing: 4px;
+    font-size: 1.5rem;
+    animation: change-dvd-color 16s ease-out infinite forwards;
+}
+
+svg.video text {
+    letter-spacing: 7px;
+    font-size: .8rem;
+    font-family: "Verdana";
+    animation: change-dvd-color 16s ease-out infinite forwards;
+}
+
+@keyframes dvd-anima {
+    0% {
+        top: 0;
+        left: 0;
+    }
+
+    10% {
+        top: 91%;
+        left: 20%;
+    }
+
+    20% {
+        top: 30%;
+        left: 91%;
+    }
+
+    30% {
+        top: 0;
+        left: 50%;
+    }
+
+    40% {
+        top: 65%;
+        left: 0;
+    }
+
+    50% {
+        top: 91%;
+        left: 50%;
+    }
+
+    60% {
+        top: 75%;
+        left: 91%;
+    }
+
+    70% {
+        top: 0;
+        left: 50%;
+    }
+
+    80% {
+        top: 40%;
+        left: 0;
+    }
+
+    90% {
+        top: 91%;
+        left: 30%;
+    }
+
+    100% {
+        top: 0;
+        left: 0;
+    }
+}
+
+@keyframes change-dvd-color {
+
+    0%,
+    100% {
+        fill: pink;
+    }
+
+    10% {
+        fill: blue;
+    }
+
+    20% {
+        fill: green;
+    }
+
+    30% {
+        fill: orange;
+    }
+
+    40% {
+        fill: orangered;
+    }
+
+    50% {
+        fill: brown;
+    }
+
+    60% {
+        fill: tomato;
+    }
+
+    70% {
+        fill: blueviolet;
+    }
+
+    80% {
+        fill: maroon;
+    }
+
+    90% {
+        fill: crimson;
+    }
+}
+
+@keyframes change-video-color {
+
+    0%,
+    100% {
+        fill: pink;
+    }
+
+    10% {
+        fill: blue;
+    }
+
+    20% {
+        fill: green;
+    }
+
+    30% {
+        fill: orange;
+    }
+
+    40% {
+        fill: orangered;
+    }
+
+    50% {
+        fill: brown;
+    }
+
+    60% {
+        fill: tomato;
+    }
+
+    70% {
+        fill: blueviolet;
+    }
+
+    80% {
+        fill: maroon;
+    }
+
+    90% {
+        fill: crimson;
+    }
+}
+
+
+@media (max-width: 768px) {
+    div.dvd-video {
+        width: 20%;
+    }
+
+    svg.dvd text,
+    svg.video text {
+        font-size: 1rem;
+    }
+}
